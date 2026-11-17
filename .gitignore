@@ -1,4 +1,5 @@
 #Datasets
+games_metadata.json
 *.csv
 
 # Byte-compiled / optimized / DLL files
