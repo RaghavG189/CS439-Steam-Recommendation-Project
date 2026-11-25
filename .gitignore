@@ -1,3 +1,8 @@
+#Preprocessed data
+*.parquet
+id_mappingd.json
+
+
 #Datasets
 games_metadata.json
 *.csv

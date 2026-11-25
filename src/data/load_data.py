@@ -44,6 +44,6 @@ def load_recommendations_chunked(path='data/raw/recommendations.csv', valid_apps
     for chunk in pd.read_csv(path, usecols=use_cols, dtype=rec_dtypes, parse_dates=['date'], chunksize=chunk_size):
         if valid_apps is not None:
             chunk = chunk[chunk['app_id'].isin(valid_apps)]
-        chunks.append(chunks)
+        chunks.append(chunk)
 
     return pd.concat(chunks, ignore_index=True)
